@@ -2,7 +2,7 @@ FROM jupyter/all-spark-notebook:python-3.8
 
 USER root 
 
-RUN curl -O https://dlcdn.apache.org/spark/spark-3.3.2/spark-3.3.2-bin-hadoop3.tgz \
+RUN curl -O https://archive.apache.org/dist/spark/spark-3.3.2/spark-3.3.2-bin-hadoop3.tgz \
     && tar zxvf spark-3.3.2-bin-hadoop3.tgz \
     && rm -rf spark-3.3.2-bin-hadoop3.tgz \
     && mv spark-3.3.2-bin-hadoop3/ /usr/local/ \
